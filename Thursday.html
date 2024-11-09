@@ -5,12 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    .left, .center, .right{
+        flex: 1;
+        text-align: center;
+    }
+    .left{
+        text-align: left;
+    }
+    .right{
+        text-align: right;
+    }
+</style>
 <body>
 
-    <h1>Четверг</h1>
-    <a href="Wednesday.html">Среда</a>
-    <a href="index.html">Ежедневник</a>
-    <a href="Friday.html">Пятница</a>
-    <h5>Турник</h5>
+    <div class="center">
+        <h1>Четверг</h1>
+    </div>
+    <div class="container">
+        <div class="left"><a href="Wednesday.html">Среда</a></div>
+        <div class="center"><a href="index.html">Ежедневник</a></div>
+        <div class="right"><a href="Friday.html">Пятница</a></div>
+    </div><br>
+    Турник
 </body>
 </html>
